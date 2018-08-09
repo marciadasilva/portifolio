@@ -2,4 +2,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## My portifolio
 
-* Project using React
+* Project using React.

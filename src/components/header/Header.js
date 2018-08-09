@@ -25,10 +25,10 @@ const Header = () => {
             <Link to="/">Playground</Link>
           </li>
           <li className="header__item">
-            <Link to="/contact">Contact</Link>
+            <Link to="/">Contact</Link>
           </li>
           <li className="header__item">
-            <Link to="/about">About</Link>
+            <Link to="/">About</Link>
           </li>
         </ul>
         <div className="header__icons">

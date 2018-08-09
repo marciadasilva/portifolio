@@ -63,34 +63,29 @@
 }
 
 .change-color {
-  color: #25f2a0;
-  background-image: -webkit-linear-gradient(92deg, #25f2a0, #3afe3a);
+  color: #d4234f;
+  background-image: -webkit-linear-gradient(92deg, #d4234f, #dec63c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 60s infinite linear;
+  -webkit-animation: hue 5s infinite linear;
   text-align: center;
 }
-
 @-webkit-keyframes hue {
   from {
     -webkit-filter: hue-rotate(0deg);
   }
-
   to {
     -webkit-filter: hue-rotate(-360deg);
   }
 }
-
 .animated {
   display: inline-block;
 }
-
 .animated:hover {
   animation-duration: 500ms;
   animation-fill-mode: both;
   animation-name: rubberBand;
 }
-
 @keyframes rubberBand {
   0% {
     -webkit-transform: scaleX(1);

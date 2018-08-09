@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.card {
+  background: linear-gradient(to bottom, #1e1f1f 0%, #373c3b 40%, #000000 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+  border-radius: 0.5rem;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  padding-top: 5rem;
+  width: 40rem;
+}
+
+.card-items {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 250px;
+}
+
+.circle-1 {
+  border-color: #b2adc1 transparent #b2adc1 #b2adc1;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  left: 0.4%;
+  padding-bottom: 100%;
+  position: absolute;
+  top: -0.2%;
+  transition: all 1.5s ease-in-out;
+  width: 100%;
+}
+
+.card:hover .circle-1 {
+  transform: rotate(360deg);
+}
+
+.circle-2 {
+  border-radius: 50%;
+  width: 95%;
+  padding-bottom: 95%;
+  position: absolute;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #b2adc1 #b2adc1 #b2adc1 transparent;
+  top: 1.2%;
+  left: 3%;
+  transition: all 1.5s ease-in-out;
+}
+
+@media (min-width: 225px) {
+  .circle-2 {
+    top: 1%;
+  }
+}
+
+.card:hover .circle-2 {
+  transform: rotate(-360deg);
+}
+
+.image {
+  border-radius: 50%;
+  background-image: url("./images/profile.jpg");
+  width: 90%;
+  padding-bottom: 90%;
+  margin: 6%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 225px) {
+  .image {
+    margin: 5%;
+  }
+}
+
+.name {
+  color: #b2adc1;
+  margin: 30px 0 0;
+  text-align: center;
+}
+
+.role {
+  color: #b2adc1;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.card-contact {
+  text-decoration: none;
+  color: #b2adc1;
+  border: 2px solid #b2adc1;
+  border-radius: 20px;
+  margin: 1.5rem 0 5rem;
+  padding: 1rem 5rem;
+  text-align: center;
+  transition: all 2s;
+}
+
+.card-contact:hover {
+  background-color: #b2adc1;
+  color: #333;
+}

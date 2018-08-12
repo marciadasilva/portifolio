@@ -22,6 +22,11 @@ const Works = Loadable({
   loading: () => <Loading />
 });
 
+const Playground = Loadable({
+  loader: () => import("./components/playground/Playground"),
+  loading: () => <Loading />
+});
+
 const Contact = Loadable({
   loader: () => import("./components/contact/Contact"),
   loading: () => <Loading />
@@ -39,6 +44,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/recent-works" component={Works} />
+          <Route exact path="/playground" component={Playground} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
         </Switch>

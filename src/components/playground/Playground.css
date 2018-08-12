@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+
+.playground {
+  background-color: #eaeaea;
+  font-family: "Montserrat", sans-serif;
+  min-height: calc(100vh - var(--header-size));
+}
+
+.playground__title {
+  color: #333333;
+  font-family: "Indie Flower", cursive;
+  font-size: 6rem;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.playground__subtitle {
+  font-size: 2rem;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.playground__subtitle span {
+  font-size: 5rem;
+  color: #330033;
+}
+
+.pens {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+
+.pen {
+  width: 80vw;
+}
+
+.pen-title {
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+.cp_embed_iframe {
+  box-shadow: 0 32px 10px -20px rgba(0, 0, 0, 0.4);
+}

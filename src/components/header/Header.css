@@ -15,11 +15,30 @@
   align-items: center;
   color: rgba(255, 255, 255, 0.95);
   display: flex;
+  flex-direction: column;
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   justify-content: space-evenly;
+  padding: 1rem 0;
   width: 75%;
+}
+
+@media (min-width: 1024px) {
+  .header__nav {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.header__nav > * {
+  padding: 0.5rem 0;
+}
+
+@media (min-width: 1024px) {
+  .header__nav > * {
+    padding: 0;
+  }
 }
 
 .header__logo {
@@ -30,7 +49,14 @@
 .header__items {
   display: flex;
   flex-basis: 60%;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .header__items {
+    justify-content: flex-start;
+  }
 }
 
 .header__item {

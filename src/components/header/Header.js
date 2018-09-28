@@ -28,7 +28,7 @@ const Header = () => {
             <Link to="/playground">Playground</Link>
           </li>
           <li className="header__item">
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
           <li className="header__item">
             <Link to="/">About</Link>

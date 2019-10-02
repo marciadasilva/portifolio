@@ -1,73 +1,74 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 
 .contact {
-  align-items: center;
-  background-color: #5e005e;
-  display: flex;
-  flex-direction: column;
-  min-height: calc(100vh - var(--header-size));
-  width: 100vw;
+	align-items: center;
+	background-color: #5e005e;
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - var(--header-size));
+	padding-bottom: 2rem;
+	width: 100vw;
 }
 
 .contact__header {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 5rem 0;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 5rem 0;
 }
 
 @media (min-width: 1024px) {
-  .contact__header {
-    flex-direction: row;
-  }
+	.contact__header {
+		flex-direction: row;
+	}
 }
 
 .contact__title {
-  color: #fff;
-  font-family: "Roboto Mono", monospace;
-  font-size: 3rem;
-  padding-left: 0;
-  padding-top: 1rem;
+	color: #fff;
+	font-family: "Roboto Mono", monospace;
+	font-size: 3rem;
+	padding-left: 0;
+	padding-top: 1rem;
 }
 
 @media (min-width: 1024px) {
-  .contact__title {
-    font-size: 3.5rem;
-    padding-left: 5rem;
-    padding-top: 0;
-  }
+	.contact__title {
+		font-size: 3.5rem;
+		padding-left: 5rem;
+		padding-top: 0;
+	}
 }
 
 .contact__content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0 1rem;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 0 1rem;
 }
 
 @media (min-width: 1024px) {
-  .contact__content {
-    align-items: flex-start;
-  }
+	.contact__content {
+		align-items: flex-start;
+	}
 }
 
 .contact__item {
-  padding: 1rem 0;
+	padding: 1rem 0;
 }
 
 .contact__text {
-  color: #fff;
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.2rem;
-  padding-left: 1rem;
+	color: #fff;
+	font-family: "Roboto Mono", monospace;
+	font-size: 1.2rem;
+	padding-left: 1rem;
 }
 
 @media (min-width: 1024px) {
-  .contact__text {
-    font-size: 1.5rem;
-  }
+	.contact__text {
+		font-size: 1.5rem;
+	}
 }
 
 .contact__img {
-  height: 2.5rem;
+	height: 2.5rem;
 }

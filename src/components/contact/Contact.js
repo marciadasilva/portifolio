@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Layout from '../layout/Layout';
+import Flower from '../../common/Flower';
+
 import FacebookLogo from './images/facebook-small.png';
 import GithubLogo from './images/github.png';
 import CodepenLogo from './images/codepen.png';
@@ -7,14 +10,10 @@ import TwitterLogo from './images/twitter-small.png';
 import LinkedinLogo from './images/linkedin-small.png';
 import ContactLogo from './images/contact.png';
 
-import Header from '../header/Header';
-import Flower from '../../common/Flower';
-
 import './Contact.css';
 
 const Contact = () => (
-	<main>
-		<Header />
+	<Layout>
 		<section className='contact'>
 			<div className='contact__header'>
 				<Flower />
@@ -94,7 +93,7 @@ const Contact = () => (
 				</a>
 			</div>
 		</section>
-	</main>
+	</Layout>
 );
 
 export default Contact;

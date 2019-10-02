@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Header from '../header/Header';
+import Layout from '../layout/Layout';
 import Card from './Card';
 
 import './Home.css';
 
 const Home = () => (
-	<main>
+	<Layout>
 		<section className='home'>
 			<div className='home__content'>
 				<div className='home__text'>
@@ -36,8 +36,7 @@ const Home = () => (
 				</div>
 			</div>
 		</section>
-		<Header />
-	</main>
+	</Layout>
 );
 
 export default Home;

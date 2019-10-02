@@ -2,13 +2,11 @@ import React from "react";
 
 import Header from "../header/Header";
 
-import "./Works.css";
-
-const Works = ({ children }) => (
+const Layout = ({ children }) => (
   <>
     <Header />
     {children}
   </>
 );
 
-export default Works;
+export default Layout;

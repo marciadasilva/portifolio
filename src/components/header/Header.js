@@ -1,34 +1,42 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-import FacebookLogo from "./images/facebook.png";
-import InstagramLogo from "./images/instagram.png";
-import TwitterLogo from "./images/twitter.png";
-import CodepenLogo from "./images/codepen.png";
-import GithubLogo from "./images/github.png";
-import LinkedinLogo from "./images/linkedin.png";
+import FacebookLogo from './images/facebook.png';
+import InstagramLogo from './images/instagram.png';
+import TwitterLogo from './images/twitter.png';
+import CodepenLogo from './images/codepen.png';
+import GithubLogo from './images/github.png';
+import LinkedinLogo from './images/linkedin.png';
 
-import "./Header.css";
+import './Header.css';
 
 const Header = () => {
   return (
     <header className="header">
       <nav className="header__nav">
         <div className="header__logo">
-          <Link to="/">{"<Marcia />"}</Link>
+          <NavLink to="/">{'<Marcia />'}</NavLink>
         </div>
         <ul className="header__items">
           <li className="header__item">
-            <Link to="/">Home</Link>
+            <NavLink to="/" exact={true} activeClassName="header__active">
+              Home
+            </NavLink>
           </li>
           <li className="header__item">
-            <Link to="/recent-works">Recent Works</Link>
+            <NavLink to="/recent-works" activeClassName="header__active">
+              Recent Works
+            </NavLink>
           </li>
           <li className="header__item">
-            <Link to="/playground">Playground</Link>
+            <NavLink to="/playground" activeClassName="header__active">
+              Playground
+            </NavLink>
           </li>
           <li className="header__item">
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/contact" activeClassName="header__active">
+              Contact
+            </NavLink>
           </li>
         </ul>
         <div className="header__icons">
